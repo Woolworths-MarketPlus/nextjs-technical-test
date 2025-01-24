@@ -45,7 +45,10 @@ This sample application is built with [Next.js](https://nextjs.org/) and demonst
    - When users choose values for _all_ variant options, you should determine which _Variant_ matches that selection.
    - Once a specific variant is identified:
      - Update the **price** displayed on the page to reflect that variant’s price.
-     - Update the **carousel image** to match the selected variant (you’ll find the relevant image index in each variant).
+     - Navigate to the right **carousel image** to match the selected variant (you’ll find the relevant image index in each variant).
+
+> [!TIP]
+> We use the shadcn/ui Carousel, use their docs to figure out how to navigate to a given slide: https://ui.shadcn.com/docs/components/carousel
 
 3. **Handle Out-of-Stock Variants**  
    Some variants are marked as `outOfStock`. We need to reflect this in our UI by:

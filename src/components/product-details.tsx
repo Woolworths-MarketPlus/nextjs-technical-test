@@ -32,10 +32,12 @@ export const ProductDetails = ({ product }: ProductDetailsProps) => {
       </Carousel>
 
       <div>
-        <h1 className="text-2xl font-semibold">{product.title}</h1>
-        <div className="flex items-center mt-4">
+        <h1 className="text-2xl font-semibold text-[#282828]">
+          {product.title}
+        </h1>
+        <div className="flex items-center mt-2 mb-4">
           <span className="text-yellow-500">★</span>
-          <span className="ml-1">
+          <span className="ml-1 text-[#282828]">
             {product.rating.value} ({product.rating.count})
           </span>
         </div>
