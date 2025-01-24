@@ -1,7 +1,3 @@
-Below is a revised `README.md` that is more explicit about the requirements and project context but still leaves room for problem-solving. Feel free to adjust any wording or formatting to suit your style.
-
----
-
 # Next.js Technical Test
 
 Welcome to the MyDeal Product Detail Page (PDP) technical test. This simplified PDP shows how product information is structured and displayed on MyDeal.
