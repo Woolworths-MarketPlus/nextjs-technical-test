@@ -92,130 +92,150 @@ export const getProductData = () => {
           name: "Single - Black",
           variantOptionIds: [201, 301],
           imageIndex: 1,
-          outOfStock: true
+          outOfStock: true,
+          price: 14.99
         },
         {
           id: 11,
           name: "Single - Dark Grey",
           variantOptionIds: [201, 302],
-          imageIndex: 2
+          imageIndex: 2,
+          price: 14.99
         },
         {
           id: 12,
           name: "Single - Navy",
           variantOptionIds: [201, 303],
           imageIndex: 3,
-          outOfStock: true
+          outOfStock: true,
+          price: 14.99
         },
         {
           id: 13,
           name: "Single - Teal",
           variantOptionIds: [201, 304],
-          imageIndex: 4
+          imageIndex: 4,
+          price: 14.99
         },
         {
           id: 14,
           name: "Single - Purple",
           variantOptionIds: [201, 305],
           imageIndex: 5,
-          outOfStock: true
+          outOfStock: true,
+          price: 14.99
         },
         {
           id: 15,
           name: "King Single - Black",
           variantOptionIds: [202, 301],
           imageIndex: 1,
-          outOfStock: true
+          outOfStock: true,
+          price: 19.99
         },
         {
           id: 16,
           name: "King Single - Dark Grey",
           variantOptionIds: [202, 302],
-          imageIndex: 2
+          imageIndex: 2,
+          price: 19.99
         },
         {
           id: 17,
           name: "King Single - Navy",
           variantOptionIds: [202, 303],
-          imageIndex: 3
+          imageIndex: 3,
+          price: 19.99
         },
         {
           id: 18,
           name: "King Single - Teal",
           variantOptionIds: [202, 304],
           imageIndex: 4,
-          outOfStock: true
+          outOfStock: true,
+          price: 19.99
         },
         {
           id: 19,
           name: "King Single - Purple",
           variantOptionIds: [202, 305],
-          imageIndex: 5
+          imageIndex: 5,
+          price: 19.99
         },
         {
           id: 20,
           name: "Double - Black",
           variantOptionIds: [203, 301],
-          imageIndex: 1
+          imageIndex: 1,
+          price: 24.99
         },
         {
           id: 21,
           name: "Double - Dark Grey",
           variantOptionIds: [203, 302],
           imageIndex: 2,
-          outOfStock: true
+          outOfStock: true,
+          price: 24.99
         },
         {
           id: 22,
           name: "Double - Navy",
           variantOptionIds: [203, 303],
           imageIndex: 3,
-          outOfStock: true
+          outOfStock: true,
+          price: 24.99
         },
         {
           id: 23,
           name: "Double - Teal",
           variantOptionIds: [203, 304],
-          imageIndex: 4
+          imageIndex: 4,
+          price: 24.99
         },
         {
           id: 24,
           name: "Double - Purple",
           variantOptionIds: [203, 305],
-          imageIndex: 5
+          imageIndex: 5,
+          price: 24.99
         },
         {
           id: 25,
           name: "Queen - Black",
           variantOptionIds: [204, 301],
           imageIndex: 1,
-          outOfStock: true
+          outOfStock: true,
+          price: 29.99
         },
         {
           id: 26,
           name: "Queen - Dark Grey",
           variantOptionIds: [204, 302],
-          imageIndex: 2
+          imageIndex: 2,
+          price: 29.99
         },
         {
           id: 27,
           name: "Queen - Navy",
           variantOptionIds: [204, 303],
           imageIndex: 3,
-          outOfStock: true
+          outOfStock: true,
+          price: 29.99
         },
         {
           id: 28,
           name: "Queen - Teal",
           variantOptionIds: [204, 304],
-          imageIndex: 4
+          imageIndex: 4,
+          price: 29.99
         },
         {
           id: 29,
           name: "Queen - Purple",
           variantOptionIds: [204, 305],
           imageIndex: 5,
-          outOfStock: true
+          outOfStock: true,
+          price: 29.99
         }
       ]
     } as Product

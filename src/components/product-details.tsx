@@ -44,7 +44,9 @@ export const ProductDetails = ({ product }: ProductDetailsProps) => {
           ${product.price}
         </p>
 
-        <Button
+        <Button className="mt-4 font-semibold" size="lg">
+          Add to cart
+        </Button>
       </div>
     </div>
   );

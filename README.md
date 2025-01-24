@@ -19,17 +19,17 @@ Welcome to the MyDeal Product Detail Page (PDP) technical test. This simplified 
 This sample application is built with [Next.js](https://nextjs.org/) and demonstrates the following:
 
 - **Basic Product Data**  
-  A single “product” with details such as title, description, rating, images, etc. (see `services/products.ts` for the data).
+  A single “product” with details such as title, description, rating, images, etc. (see `@/services/products.ts` for the data).
 - **Variants & Variant Options**  
   Products can have different sizes, colors, etc. Each _Variant_ (e.g. “Single - Black”) corresponds to a combination of _Variant Options_ (e.g. “Size: Single”, “Colour: Black”).
 
 ### Relevant Files
 
-- **`@/services/products.ts`**  
+- `@/services/products.ts`
   Contains the product data, including its variants and variant options.
-- **`@/types/product.ts`**  
+- `@/types/product.ts`
   Defines the TypeScript interfaces for products, images, variants, and so on.
-- **`@/components/product-details.tsx`**  
+- `@/components/product-details.tsx`
   Displays the product details and a simple carousel of images.
 
 ## Your Task
@@ -44,14 +44,28 @@ This sample application is built with [Next.js](https://nextjs.org/) and demonst
 
    - When users choose values for _all_ variant options, you should determine which _Variant_ matches that selection.
    - Once a specific variant is identified:
-     - Update the **price** displayed on the page to reflect that variant’s price (if you decide to store variant-specific pricing).
+     - Update the **price** displayed on the page to reflect that variant’s price.
      - Update the **carousel image** to match the selected variant (you’ll find the relevant image index in each variant).
 
 3. **Handle Out-of-Stock Variants**  
-   Some variants are marked as `outOfStock`. Decide how you want to handle or indicate this in your UI. For instance, you might disable their Select options or show a label.
+   Some variants are marked as `outOfStock`. We need to reflect this in our UI by:
 
-4. **Keep it User-Friendly**  
-   We want a minimal yet clear UI that lets users see how changing the Select options impacts the price and the displayed image.
+   - **Disabling** the corresponding option if all other selected variant options lead to an out-of-stock variant.
+   - **Adding** `" - Out of Stock"` to the end of that option’s label.
+
+   For example, if the variant **“Single - Black”** is out of stock and the user has already selected **“Single”**, then in the **“Colour”** Select, the **“Black”** option should be disabled and labeled **“Black - Out of Stock”**.
+
+4. **Validate Selections & Show Toast**
+
+- If the user clicks **Add to cart** but has not selected one or more variant options:
+  - Display an error message in red underneath each Select that does not have a chosen value. For example: "Please select an option."
+  - Once the user selects a valid value in that Select, hide the error message for that field.
+- If **all** variant options are selected and the user clicks **Add to cart** open a [Toast](https://ui.shadcn.com/docs/components/toast) with:
+  - **Title:** `You've added {Product Name} - {Variant Name} to your cart.`
+  - **No description** is needed.
+
+> [!IMPORTANT]
+> Just like for the Select you are expected to use the shadcn/ui Toast component: https://ui.shadcn.com/docs/components/toast
 
 ## Expectations
 

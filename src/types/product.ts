@@ -19,6 +19,7 @@ export interface Variant {
   name: string;
   variantOptionIds: number[];
   imageIndex: number;
+  price: number;
   outOfStock?: boolean;
 }
 
